@@ -39,4 +39,12 @@ struct ListPlaylist {
     adrplaylist lastp;
 };
 
+void CreatePlaylistList(ListPlaylist &L);
+bool isEmptyPlaylist(ListPlaylist L);
+adrplaylist createElemPlaylist(string title, string desc, string creator);
+bool isEmptysong(adrplaylist p);
+adrsongs createElemSongs(string title, string artist, string genre, int durm, int durs);
+void addPlaylist(ListPlaylist &L, adrplaylist p);
+void addSong(ListPlaylist &L, adrsongs s, string title);
+
 #endif // PLAYLISTSTRUCT_H_INCLUDED
